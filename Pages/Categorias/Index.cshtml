@@ -1,0 +1,35 @@
+@page
+@model RestauranteCategoriasPlatos.Pages.Categorias.IndexModel
+@{
+    ViewData["Title"] = "Categorías";
+}
+
+<h1>Categorías</h1>
+<p><a asp-page="Create">Registrar categoría</a></p>
+
+@if (TempData["Mensaje"] is string mensaje)
+{
+    <p>@mensaje</p>
+}
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Nombre</th>
+            <th>Descripción</th>
+            <th>Cantidad de platos</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var categoria in Model.Categorias)
+        {
+            <tr>
+                <td>@categoria.Id</td>
+                <td>@categoria.Nombre</td>
+                <td>@(categoria.Descripcion ?? "-")</td>
+                <td>@categoria.Platos.Count</td>
+            </tr>
+        }
+    </tbody>
+</table>
