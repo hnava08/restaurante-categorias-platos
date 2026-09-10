@@ -1,13 +1,18 @@
 # Restaurante - Categorías y Platos
 
-Proyecto ASP.NET Core Razor Pages con SQLite.
+Proyecto ASP.NET Core Razor Pages con SQLite (UI simple).
 
-## Cómo abrir
+## Descargar
 
-1. Abrir `RestauranteCategoriasPlatos.slnx` en Visual Studio
-2. Pulsar F5
+En GitHub: **Code → Download ZIP**
 
-## Cómo ejecutar
+## Abrir en Visual Studio
+
+1. Descomprimir el ZIP
+2. Abrir `RestauranteCategoriasPlatos.slnx`
+3. Pulsar F5
+
+## Ejecutar en terminal
 
 ```
 dotnet restore
